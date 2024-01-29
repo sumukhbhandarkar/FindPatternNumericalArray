@@ -3,7 +3,6 @@ package org.example;
 // 1,2,3,5,6,0,1,2,3,5,2,5
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * This is the bruteforce approach, will take into account each pattern in a pair, triplet and so on
@@ -34,16 +33,15 @@ public class BruteForce {
     /**
      * Will return all the subArrays for the input array
      * output: [[1, 2], [1, 2, 3], [1, 2, 3, 5], [1, 2, 3, 5, 6], [2, 3], [2, 3, 5], [2, 3, 5, 6], [2, 3, 5, 6, 0], [3, 5], [3, 5, 6], [3, 5, 6, 0], [3, 5, 6, 0, 1], [5, 6], [5, 6, 0], [5, 6, 0, 1], [5, 6, 0, 1, 2], [6, 0], [6, 0, 1], [6, 0, 1, 2], [6, 0, 1, 2, 3], [0, 1], [0, 1, 2], [0, 1, 2, 3], [0, 1, 2, 3, 5], [1, 2], [1, 2, 3], [1, 2, 3, 5], [1, 2, 3, 5, 2], [2, 3], [2, 3, 5], [2, 3, 5, 2], [2, 3, 5, 2, 5], [3, 5], [3, 5, 2], [3, 5, 2, 5], [5, 2], [5, 2, 5], [2, 5]]
-     * @param input
-     * @return
+     * @param input List of integers
+     * @return void
      */
     public static List<List<Integer>> findAllSubArrays(Integer[] input) {
         List<List<Integer>> allSubArrays = new ArrayList<>();
         for (int i = 0; i < input.length; i++)
             for (int j = i; j < input.length; j++) {
                 List<Integer> subArray = new ArrayList<>();
-                for (int k = i; k <=j; k++)
-                    subArray.add(input[k]);
+                subArray.addAll(Arrays.asList(input).subList(i, j + 1));
                 if (subArray.size() >= 2 && subArray.size() <= input.length/2-1)
                     allSubArrays.add(subArray);
             }
