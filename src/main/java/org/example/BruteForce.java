@@ -54,3 +54,9 @@ public class BruteForce {
  * The output of the code: {[1, 2, 3]=2, [1, 2]=2, [2, 3]=2, [2, 3, 5]=2, [3, 5]=2, [1, 2, 3, 5]=2}
  * Where each key of the HashMap shows the pattern and the value shows the count
  */
+
+/**
+ * Time complexity of `finaAllSubArrays` is O(N^3)
+ * Time complexity of `countSubListFreq` is O(N * M) , where N = length of outer list, M = length of inner list
+ * Overall time complexity remains O(N^3)
+ */

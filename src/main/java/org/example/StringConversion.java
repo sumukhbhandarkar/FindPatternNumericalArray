@@ -44,3 +44,8 @@ public class StringConversion {
  * Since it is converted to string, and output stored in LinkedHashMap
  * The first element is the pattern (number sequence) and the value is the count
  */
+
+/**
+ * Time complexity of findAllSubStrings is O(N^3).
+ * Iterating through each substring and counting the occurrences has a complexity of O(N^2), where N is size of input array
+ */
