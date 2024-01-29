@@ -11,10 +11,12 @@ Find all patterns in an array of intgers
 _input_ - [1,2,3,5,6,0,1,2,3,5,2,5]
 <br>
 _output_ - <br>
-[1,2], 2 <br>
-[1,2,3], 2 <br>
-[2,3], 2 <br>
-[3,5], 2 <br>
+[2, 3]=2 <br>
+[3, 5]=2 <br>
+[2, 3, 5]=2 <br>
+[1, 2, 3, 5]=2 <br>
+[1, 2, 3]=2 <br>
+[1, 2]=2 <br>
 
 #### Explanation
 * Each of the pattern mentioned above is occurring multiple times in the array
