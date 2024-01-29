@@ -24,14 +24,14 @@ _output_ - <br>
 
 ## Solutions
 
-### BruteForce.class
+* ### BruteForce.class
 
 This is the bruteforce approach, will take into account each pattern in a pair, triplet and so on
 It will match the pattern within the array and return the count
 
 Time Complexity: O(N^3), where N is the size of input array
 
-### FindPatternFrequency.class
+* ### FindPatternFrequency.class
 
 This approch is a simpler and more optimized solution
 It is a combination of the previous two solutions.
@@ -41,13 +41,13 @@ In the main method, we only print those entries of the map, where value(freq), i
 
 Time Complxity: O(N^3), where N is the size of input array
 
-### StringConversion.class
+* ### StringConversion.class
 
 This approach converts the list into a string and finds all repeating substrings
 
 Time Complexity: O(N^3)
 
-### WithoutNestedLoops.class
+* ### WithoutNestedLoops.class
 
 This is the most efficient code for this problem
 
